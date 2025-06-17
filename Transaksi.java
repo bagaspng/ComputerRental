@@ -6,7 +6,7 @@ public class Transaksi {
     private LocalDateTime waktuMulai;
     private LocalDateTime waktuSelesai;
     private int totalDurasi;
-    private double tarifPerJam = 5000;
+    private final double tarifPerJam = 5000;
     private double totalBayar;
 
     public Transaksi(int id, Pelanggan p, Komputer k, LocalDateTime mulai) {
@@ -59,7 +59,6 @@ public class Transaksi {
     public int getTotalDurasi() { return totalDurasi; }
     public void setTotalDurasi(int totalDurasi) { this.totalDurasi = totalDurasi; }
     public double getTarifPerJam() { return tarifPerJam; }
-    public void setTarifPerJam(double tarifPerJam) { this.tarifPerJam = tarifPerJam; }
     public double getTotalBayar() { return totalBayar; }
     public void setTotalBayar(double totalBayar) { this.totalBayar = totalBayar; }
 }
