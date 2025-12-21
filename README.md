@@ -1,89 +1,39 @@
-✅ 1. Class Komputer
-Atribut:
-idKomputer : String
-nomorKomputer : int
-status : String (contoh: "KOSONG", "AKTIF", "MAINTENANCE")
-durasiPenggunaan : int (dalam menit)
-pelangganAktif : Pelanggan
-Method:
-aktifkan(Pelanggan pelanggan)
-matikan()
-setStatus(String status)
-getStatus()
-hitungDurasi(LocalDateTime mulai, LocalDateTime selesai) : int
+# 💻 Computer Rental Management System (Warnet)
 
-✅ 2. Class Pelanggan
-Atribut:
-idPelanggan : String
-nama : String
-tipeAkun : String (contoh: "MEMBER", "NON_MEMBER")
-noTelepon : String
-Method:
-login()
-logout()
-tampilInfo()
+Sistem manajemen rental komputer (warnet) berbasis Java dengan antarmuka GUI menggunakan Swing. Aplikasi ini dirancang untuk mengelola operasional warnet termasuk monitoring komputer, pengelolaan pelanggan, transaksi, dan pelaporan.
 
-✅ 3. Class Operator
-Atribut:
-idOperator : String
-nama : String
-username : String
-password : String
-Method:
-login(String username, String password)
-monitorKomputer(List<Komputer> komputerList)
-prosesTransaksi(Pelanggan p, Komputer k)
+## 📋 Deskripsi
 
-✅ 4. Class Transaksi
-Atribut:
-idTransaksi : String
-pelanggan : Pelanggan
-komputer : Komputer
-waktuMulai : LocalDateTime
-waktuSelesai : LocalDateTime
-totalDurasi : int
-tarifPerJam : double
-totalBayar : double
+Sistem ini merupakan aplikasi desktop yang memungkinkan operator warnet untuk:
+- Login dan autentikasi operator
+- Monitoring status komputer secara real-time
+- Mengelola data pelanggan, operator, dan komputer
+- Memulai dan mengakhiri sesi penggunaan komputer
+- Menghitung biaya otomatis berdasarkan durasi penggunaan
+- Menghasilkan laporan pendapatan
 
-Method:
-hitungDurasi() : int
-hitungTotalBayar() : double
-cetakStruk()
+## ✨ Fitur Utama
 
-✅ 5. Class Member
-Atribut:
-idMember : String
-pelanggan : Pelanggan
-tanggalDaftar : LocalDate
-tanggalKadaluarsa : LocalDate
-saldo : double
+### 🔐 Autentikasi
+- Login operator dengan username dan password
+- Sistem keamanan untuk akses ke panel operator
 
-Method:
-cekAktif() : boolean
-isiSaldo(double nominal)
-potongSaldo(double nominal)
+### 🖥️ Manajemen Komputer
+- Monitoring status komputer (KOSONG, AKTIF, MAINTENANCE)
+- Menampilkan informasi pengguna aktif
+- Tracking durasi penggunaan per komputer
 
-✅ 6. Class Main
-Atribut:
-(Biasanya class Main tidak memiliki atribut, tapi digunakan untuk mengeksekusi program)
-Method:
-main(String[] args)
-menuUtama()
-prosesLoginOperator()
-prosesLoginPelanggan()
-mulaiSesi()
-akhiriSesi()
+### 👥 Manajemen Pelanggan
+- Registrasi pelanggan baru
+- Sistem member dan non-member
+- Penyimpanan informasi kontak pelanggan
 
-✅ 7. Class Laporan
-Atribut:
-idLaporan : String
-periodeAwal : LocalDate
-periodeAkhir : LocalDate
-daftarTransaksi : List<Transaksi>
-totalPendapatan : double
+### 💳 Sistem Transaksi
+- Pencatatan waktu mulai dan selesai penggunaan
+- Perhitungan biaya otomatis berdasarkan durasi
+- Cetak struk transaksi
 
-Method:
-generateLaporan()
-tampilkanRingkasan()
-cetakLaporan()
-
+### 📊 Pelaporan
+- Laporan pendapatan periodik
+- Ringkasan transaksi
+- Total pendapatan
