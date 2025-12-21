@@ -158,4 +158,11 @@ Login Operator → Menu Utama → Pilih Operasi
                               ├─ Cetak Laporan
                               └─ Logout
 ```
+## 👨‍💻 Author
+
+**bagaspng**
+- GitHub: [@bagaspng](https://github.com/bagaspng)
+---
+
+⭐ **Jangan lupa berikan star jika proyek ini bermanfaat!** ⭐
 
