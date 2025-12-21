@@ -134,8 +134,15 @@ Antarmuka grafis pengguna menggunakan Java Swing.
 
 **Fitur GUI:**
 - Panel login operator
+
+## 🚀 Cara Menjalankan
+
+### Prasyarat
+- Java Development Kit (JDK) 8 atau lebih tinggi
+- IDE Java (BlueJ, IntelliJ IDEA, Eclipse, NetBeans, atau sejenisnya)
 - Dashboard menu operator
 - Form tambah data (Operator, Komputer, Pelanggan)
 - Tabel monitoring komputer
 - Dialog transaksi (mulai/akhiri sesi)
 - Tampilan laporan
+
