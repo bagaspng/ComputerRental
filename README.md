@@ -146,3 +146,16 @@ Antarmuka grafis pengguna menggunakan Java Swing.
 - Dialog transaksi (mulai/akhiri sesi)
 - Tampilan laporan
 
+
+## 🔄 Alur Kerja Sistem
+
+```
+Login Operator → Menu Utama → Pilih Operasi
+                              ├─ Monitor Komputer
+                              ├─ Tambah Data
+                              ├─ Mulai Sesi → Pilih Pelanggan & Komputer
+                              ├─ Akhiri Sesi → Hitung Biaya → Cetak Struk
+                              ├─ Cetak Laporan
+                              └─ Logout
+```
+
